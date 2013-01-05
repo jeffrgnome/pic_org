@@ -2,24 +2,6 @@
 Usage:
 Given a folder of files, will sort them into subfolders
 (according to the creation date)
-
-Run:
-node app.js /path/to/pictures
-
-Example:
-pictures (before)
-	IMG_123.jpg
-	IMG_456.jpg
-	...
-
-pictures (after)
-	2012_01_05
-		IMG_123.jpg
-		...
-	2012_01_14
-		IMG_456.jpg
-		...
-	...
 ###
 
 args = require('argparser').arglen(1).parse()
@@ -27,7 +9,6 @@ path = require 'path'
 fs = require 'fs'
 mv = require 'mv'
 
-### CONFIG ###
 main = {}
 
 main.start = ->
